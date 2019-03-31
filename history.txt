@@ -1,0 +1,121 @@
+    1  apt-get install -y git
+    2  ls
+    3  git config --list
+    4  git config --global user.name "venkatesh"
+    5  git config --global user.email "vsrnote@gmail.com"
+    6  git config --list
+    7  git config --global core.editor "vim"
+    8  apt-get install -y vim
+    9  git config --list
+   10  mkdir demo1
+   11  cd demo1/
+   12  lz
+   13  l
+   14  ls -ltr
+   15  ls -latr
+   16  git init
+   17  ls -lart
+   18  echo "HELLO FROM GIT" > file1.txt
+   19  git  status
+   20  git add file1.txt
+   21  git  status
+   22  history
+   23  git commit -m "This is first commit to repo"
+   24  git  status
+   25  echo "HELLO FROM venkatesh" > file2.txt
+   26  git  status
+   27  git add file2.txt
+   28  git commit
+   29  git  status
+   30  vim file1.txt 
+   31  git diff
+   32  git  status
+   33  git  checkout 
+   34  git  status
+   35  git  status file1.txt 
+   36  git  checkout file1.txt 
+   37  git  status
+   38  git diff
+   39  echo "HELLO FROM venkatesh.This is updated" > file2.txt
+   40  echo "HELLO FROM venkatesh.This is new file" > file3.txt
+   41  git commit -am "All at once"
+   42  git  status
+   43  git commit -a m "All at once"
+   44  git  status
+   45  git commit -am "All at once"
+   46  git add file3.txt 
+   47  git commit -am "All at once"
+   48  echo "HELLO FROM venkatesh.This is new file" > file4.txt
+   49  git add file4.txt 
+   50  echo "HELLO FROM venkatesh.This is new file.This is updated" > file4.txt
+   51  git add file4.txt 
+   52  git  status
+   53  echo "HELLO FROM venkatesh.This is new file.This is updated." > file4.txt
+   54  git  status
+   55  git add file4.txt 
+   56  git  status
+   57  git commit -am "All at once."
+   58  git  status
+   59  git rm file4.txt
+   60  git  status
+   61  git commit -am "Removed file4."
+   62  git  status
+   63  git rm --cached file3.txt
+   64  git  status
+   65  ls -ltr
+   66  git checkout file3.txt 
+   67  git commit -am "Removed file3."
+   68  git  status
+   69  git add file3.txt 
+   70  git commit -am "added back file3."
+   71  clear
+   72  history
+   73  echo "Ignore this file" >ignore_me.txt
+   74  mkdir ignore_folder
+   75  mv ignore_me.txt ./ignore_folder/
+   76  ls
+   77  vim .gitignore
+   78  git  status
+   79  git log
+   80  date
+   81  git commit --amend
+   82  git  status
+   83  git add .
+   84  git commit -am "Add GitIgnore file"
+   85  git  status
+   86  git log
+   87  git tag -a "V1.0" -m "Added Tag"
+   88  git tag
+   89  git  status
+   90  git log
+   91  git tag -a "V0.1" c21f66b217138124d78c43fc3e7f4ab4c1fbe6e3 -m "Added Tag"
+   92  git log
+   93  git tag
+   94  git show c1.0
+   95  git show v1.0
+   96  git show "v1.0"
+   97  git tag
+   98  git show V1.0
+   99  git remote -v
+  100  git remote add origin https://github.com/VenkateshSRajan/dummyrepo.git
+  101  git remote -v
+  102  git push origin master
+  103  git push origin --tags
+  104  history
+  105  history >history.txt
+  106  ls
+  107  git status
+  108  clear
+  109  get remote -v
+  110  git remote -v
+  111  git pull
+  112  git pull origin
+  113  git pull origin mater
+  114  git pull origin master
+  115  git status
+  116  git log
+  117  !
+  118  git status
+  119  git branch
+  120  git branch -a
+  121  history >history.txt
